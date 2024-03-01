@@ -39,6 +39,7 @@ const PopupStats = {
                 Wins: <span style="color: ${HypixelColors.GREEN}">${api.stats.Bedwars[`${gmode}wins_bedwars`]}</span><br>
                 Losses: <span style="color: ${HypixelColors.RED}">${api.stats.Bedwars[`${gmode}losses_bedwars`]}</span><br>
                 WLR: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.Bedwars[`${gmode}wins_bedwars`]/api.stats.Bedwars[`${gmode}losses_bedwars`]).toFixed(3)}</span>
+                ELO: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.Bedwars[`${gmode}wins_bedwars`]/api.stats.Bedwars[`${gmode}losses_bedwars`]).toFixed(3)}</span>
             </p>
         `;} catch {return '<p style="color: red">ERROR LOADING STATS</p>'}
     },
@@ -62,6 +63,7 @@ const PopupStats = {
                 Wins: <span style="color: ${HypixelColors.GREEN}">${api.stats.SkyWars.wins}</span><br>
                 Losses: <span style="color: ${HypixelColors.RED}">${api.stats.SkyWars.losses}</span><br>
                 WLR: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.SkyWars.wins/api.stats.SkyWars.losses).toFixed(3)}</span>
+                ELO: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.Bedwars[`${gmode}wins_bedwars`]/api.stats.Bedwars[`${gmode}losses_bedwars`]).toFixed(3)}</span>
             </p>
         `;} catch {return '<p style="color: red">ERROR LOADING STATS</p>'}
     },
@@ -85,6 +87,7 @@ const PopupStats = {
                 Wins: <span style="color: ${HypixelColors.GREEN}">${api.stats.Duels.wins}</span><br>
                 Losses: <span style="color: ${HypixelColors.RED}">${api.stats.Duels.losses}</span><br>
                 WLR: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.Duels.wins/api.stats.Duels.losses).toFixed(3)}</span>
+                ELO: <span style="color: ${HypixelColors.GOLD}">${parseFloat(api.stats.Bedwars[`${gmode}wins_bedwars`]/api.stats.Bedwars[`${gmode}losses_bedwars`]).toFixed(3)}</span>
             </p>
         `;} catch {return '<p style="color: red">ERROR LOADING STATS</p>'}
     },
